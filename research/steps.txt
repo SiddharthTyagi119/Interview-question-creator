@@ -9,6 +9,7 @@ convert the data into embedding and load into db
 initialize llm model
 helper.py- load the data and perform the chunking  and create llm pipeline
 prompt in prompt.py
+app.py 
 
 
 
