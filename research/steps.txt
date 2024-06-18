@@ -1,0 +1,11 @@
+load the data4
+extract the data
+split and chunking
+initialize the model and prompt
+generate questions
+load embedding model
+and initialize fiass 
+convert the data into embedding and load into db
+initialize llm model
+
+
