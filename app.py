@@ -23,7 +23,7 @@ async def index(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
 
-
+#to upload the docs under static/doc folder, when we click on the upload button 
 @app.post("/upload")
 async def chat(request: Request, pdf_file: bytes = File(), filename: str = Form(...)):
     base_folder = 'static/docs/'
@@ -40,7 +40,7 @@ async def chat(request: Request, pdf_file: bytes = File(), filename: str = Form(
 
 
 
-
+#to save the output answers in an output folder as a csv file 
 def get_csv(file_path):
     answer_generation_chain, ques_list = llm_pipeline(file_path)
     base_folder = 'static/output/'
